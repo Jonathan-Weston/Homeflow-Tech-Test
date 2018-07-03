@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" content ="height=device-height, initial-scale=1.0">
+  <meta name="author" content ="Jonathan Weston">
+  
+  <!-- css links -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- scripts -->
+  <!--<script src ="http://index1.homeflow.co.uk/properties?api_key=77467477edfd2689cd77796a2c4b019f&search[brighton]"></script> -->
+  <script src ="js/select.js"></script>
+  <script src ="js/selectPrice.js"></script>
+  <script src ="js/jquery-3.3.1.min.js"></script>
+  
+  <title>Homeflow</title>
+  
+</head>
+  
+  
+<body>
+ <header>
+  <h1>SONAR</h1>
+ </header>
+ 
+
+ <div id ="container">
+  <div id ="search">
+   <div id ="location">
+    <p>Location</p>
+    <select id = "locationSelect" onchange ="change_locationSelect(this.value);">
+     <option value ="1">Pick a Location</option>
+      <option value ="brighton">Brighton</option>
+      <option value ="hove">Hove</option>
+      <option value ="worthing">Worthing</option>
+    </select>
+  </div>
+  
+  <div id ="max price">
+   <p>Max Price</p>
+    <select id ="priceSelect" onchange ="change_priceSelect(this.value);">
+     <option value = "1" >Pick a Max Price</option>
+     <option value = 500>£500</option>
+     <option value = 2000>£2000</option>
+     <option value = 50000>£50,000</option>
+     <option value = 500000>£500,000</option>
+    </select>
+  </div>
+ </div>
+ 
+ <div id ="results"><h1>Results</h1></div>
+  
+   <div class ="address" id ="0"></div>
+   <div class ="address" id ="postcode0"></div>
+   <div class ="price" id ="price0"></div>
+   <div class ="address" id ="1"></div>
+   <div class ="address" id ="postcode1"></div>
+   <div class ="price" id ="price1"></div>
+   <div class ="address" id ="2"></div>
+   <div class ="address" id ="postcode2"></div>
+   <div class ="price" id ="price2"></div>
+   <div class ="address" id ="3"></div>
+   <div class ="address" id ="postcode3"></div>
+   <div class ="price" id ="price3"></div>
+   <div class ="address" id ="4"></div>
+   <div class ="address" id ="postcode4"></div>
+   <div class ="price" id ="price4"></div>
+   <div class ="address" id ="5"></div>
+   <div class ="address" id ="postcode5"></div>
+   <div class ="price" id ="price5"></div>
+   <div class ="address" id ="6"></div>
+   <div class ="address" id ="postcode6"></div>
+   <div class ="price" id ="price6"></div>
+   <div class ="address" id ="7"></div>
+   <div class ="address" id ="postcode7"></div>
+   <div class ="price" id ="price7"></div>
+   <div class ="address" id ="8"></div>
+   <div class ="address" id ="postcode8"></div>
+   <div class ="price" id ="price8"></div>
+  
+ 
+ </div>  
+
+   
+    
+    
+    
+  
+
+  <footer>
+    
+  </footer>
+</body>
+</html>
